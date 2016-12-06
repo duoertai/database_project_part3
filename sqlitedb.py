@@ -32,7 +32,6 @@ def transaction():
 def getTime():
     query_string = 'select Time from CurrentTime'
     results = query(query_string)
-    # alternatively: return results[0]['currenttime']
     return results[0].Time
 
 # returns a single item specified by the Item's ID in the database
